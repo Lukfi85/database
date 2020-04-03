@@ -50,5 +50,5 @@ SELECT AVG(TIMESTAMPDIFF(YEAR, birthday_at , curdate())) FROM users
 select WEEKDAY(CONCAT(YEAR(NOW()), SUBSTRING(birthday_at, 5, 10))) as wk, COUNT(*) FROM users group by  wk ;
 -- 0 понедельник, 1 вторник и т.д.
  
--- 3.Подсчитайте произведение чисел в столбце таблицы
+-- 3.Подсчитайте произведение чисел в столбце таблицы .
 select exp(sum(ln(price))) from products
